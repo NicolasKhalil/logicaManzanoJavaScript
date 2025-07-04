@@ -1,0 +1,5 @@
+function quadradosDe15a200() {
+  for (let i = 15; i <= 200; i++) {
+    console.log("Número:", i, "| Quadrado:", i * i);
+  }
+}
