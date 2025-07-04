@@ -1,0 +1,16 @@
+function L02G(n1, n2, n3, n4) {
+  var divisiveis = [];
+  if (n1 % 2 == 0 && n1 % 3 == 0) {
+    divisiveis.push(n1);
+  }
+  if (n2 % 2 == 0 && n2 % 3 == 0) {
+    divisiveis.push(n2);
+  }
+  if (n3 % 2 == 0 && n3 % 3 == 0) {
+    divisiveis.push(n3);
+  }
+  if (n4 % 2 == 0 && n4 % 3 == 0) {
+    divisiveis.push(n4);
+  }
+  return divisiveis;
+}
