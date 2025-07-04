@@ -1,0 +1,19 @@
+function maiorMenorAteNegativo(valores) {
+  var maior = null;
+  var menor = null;
+
+  for (var i = 0; i < valores.length; i++) {
+    var valor = valores[i];
+    if (valor < 0) {
+      break;
+    }
+    if (maior === null || valor > maior) {
+      maior = valor;
+    }
+    if (menor === null || valor < menor) {
+      menor = valor;
+    }
+  }
+
+  return { maior: maior, menor: menor };
+}
