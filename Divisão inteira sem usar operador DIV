@@ -1,0 +1,11 @@
+function divisaoInteira(dividendo, divisor) {
+  var quociente = 0;
+  var acumulador = divisor;
+
+  while (acumulador <= dividendo) {
+    quociente = quociente + 1;
+    acumulador = acumulador + divisor;
+  }
+
+  return quociente;
+}
