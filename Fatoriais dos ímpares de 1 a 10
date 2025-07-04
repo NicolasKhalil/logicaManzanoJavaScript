@@ -1,0 +1,11 @@
+function fatoriaisImpares() {
+  for (var i = 1; i <= 10; i++) {
+    if (i % 2 !== 0) {
+      var fat = 1;
+      for (var j = 1; j <= i; j++) {
+        fat = fat * j;
+      }
+      console.log("Fatorial de " + i + " = " + fat);
+    }
+  }
+}
