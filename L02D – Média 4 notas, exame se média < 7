@@ -1,0 +1,17 @@
+function L02D(n1, n2, n3, n4, notaExame) {
+  var media = (n1 + n2 + n3 + n4) / 4;
+  if (media >= 7) {
+    return "Aprovado. Média: " + media;
+  } else {
+    if (notaExame === undefined) {
+      return "Exame necessário. Média: " + media;
+    } else {
+      var novaMedia = (media + notaExame) / 2;
+      if (novaMedia >= 5) {
+        return "Aprovado em exame. Média final: " + novaMedia;
+      } else {
+        return "Reprovado. Média final: " + novaMedia;
+      }
+    }
+  }
+}
