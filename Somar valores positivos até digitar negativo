@@ -1,0 +1,17 @@
+function lerPositivos(valores) {
+  var soma = 0;
+  var quantidade = 0;
+
+  for (var i = 0; i < valores.length; i++) {
+    var n = valores[i];
+    if (n < 0) {
+      break;
+    }
+    soma = soma + n;
+    quantidade++;
+  }
+
+  var media = quantidade > 0 ? soma / quantidade : 0;
+
+  return { soma: soma, media: media, total: quantidade };
+}
