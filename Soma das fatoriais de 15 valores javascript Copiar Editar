@@ -1,0 +1,14 @@
+function somarFatoriais(valores) {
+  var soma = 0;
+
+  for (var i = 0; i < valores.length; i++) {
+    var n = valores[i];
+    var fat = 1;
+    for (var j = 1; j <= n; j++) {
+      fat = fat * j;
+    }
+    soma = soma + fat;
+  }
+
+  return soma;
+}
