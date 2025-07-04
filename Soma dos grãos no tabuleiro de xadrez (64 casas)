@@ -1,0 +1,11 @@
+function graosNoTabuleiro() {
+  var total = 0;
+  var graos = 1;
+
+  for (var i = 1; i <= 64; i++) {
+    total = total + graos;
+    graos = graos * 2;
+  }
+
+  return total;
+}
