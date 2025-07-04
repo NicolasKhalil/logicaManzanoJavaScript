@@ -1,0 +1,6 @@
+function converterCelsiusParaFahrenheit() {
+  for (var c = 10; c <= 100; c += 10) {
+    var f = (9 * c + 160) / 5;
+    console.log(c + "°C = " + f + "°F");
+  }
+}
