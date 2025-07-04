@@ -1,0 +1,19 @@
+function calcularAreaResidencialSimulada(comodos) {
+  var total = 0;
+
+  for (var i = 0; i < comodos.length; i++) {
+    var nome = comodos[i].nome;
+    var largura = comodos[i].largura;
+    var comprimento = comodos[i].comprimento;
+
+    var area = largura * comprimento;
+    console.log("Área do cômodo " + nome + ": " + area + " m²");
+    total = total + area;
+
+    if (comodos[i].continuar === "NAO") {
+      break;
+    }
+  }
+
+  console.log("Área total: " + total + " m²");
+}
