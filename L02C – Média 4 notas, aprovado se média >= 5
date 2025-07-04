@@ -1,0 +1,8 @@
+function L02C(n1, n2, n3, n4) {
+  var media = (n1 + n2 + n3 + n4) / 4;
+  if (media >= 5) {
+    return "Aprovado. Média: " + media;
+  } else {
+    return "Reprovado. Média: " + media;
+  }
+}
