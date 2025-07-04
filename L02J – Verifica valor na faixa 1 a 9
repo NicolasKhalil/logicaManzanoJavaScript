@@ -1,0 +1,7 @@
+function L02J(valor) {
+  if (valor >= 1 && valor <= 9) {
+    return "O valor está na faixa permitida";
+  } else {
+    return "O valor está fora da faixa permitida";
+  }
+}
