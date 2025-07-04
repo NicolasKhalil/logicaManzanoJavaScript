@@ -1,0 +1,8 @@
+function somarEMediar10(valores) {
+  var soma = 0;
+  for (var i = 0; i < 10; i++) {
+    soma = soma + valores[i];
+  }
+  var media = soma / 10;
+  return { soma: soma, media: media };
+}
