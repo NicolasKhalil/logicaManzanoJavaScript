@@ -1,0 +1,14 @@
+function somaMediaPares5070() {
+  var soma = 0;
+  var quantidade = 0;
+
+  for (var i = 50; i <= 70; i++) {
+    if (i % 2 === 0) {
+      soma = soma + i;
+      quantidade++;
+    }
+  }
+
+  var media = soma / quantidade;
+  return { soma: soma, media: media };
+}
